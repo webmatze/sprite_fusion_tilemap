@@ -1,0 +1,39 @@
+{
+  "tileSize": 16,
+  "mapWidth": 24,
+  "mapHeight": 9,
+  "layers": [
+    {
+      "name": "Pickups",
+      "tiles": [
+        {
+          "id": "0",
+          "x": 12,
+          "y": 5
+        },
+        {
+          "id": "1",
+          "x": 20,
+          "y": 1
+        }
+      ],
+      "collider": false
+    },
+    {
+      "name": "Blocks",
+      "tiles": [
+        {
+          "id": "2",
+          "x": 2,
+          "y": 5
+        },
+        {
+          "id": "3",
+          "x": 4,
+          "y": 5
+        }
+      ],
+      "collider": true
+    }
+  ]
+}
