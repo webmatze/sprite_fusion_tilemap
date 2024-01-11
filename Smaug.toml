@@ -1,0 +1,24 @@
+[package]
+name = "sprite_fusion_tilemap"
+authors = ["Mathias Karstädt <mathias.karstaedt@gmail.com>"]
+version = "0.1.0"
+homepage = "https://github.com/webmatze/sprite_fusion_tilemap"
+keywords = ["sprite fusion", "tilemap", "json"]
+
+# Optional:
+# documentation = "https://example.com"
+# repository = "http://github.com/example/example"
+
+# Which files do you want to be automatically required from your package.
+requires = ["lib/sprite_fusion.rb"]
+
+
+[package.installs]
+# Example
+#
+# <from> = <to>
+# "lib/library.rb" = "app/lib/library.rb"
+
+[dragonruby]
+version = "2"
+edition = "standard"
