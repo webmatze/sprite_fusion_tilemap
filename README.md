@@ -22,7 +22,8 @@ Here's a quick guide on how to use the Ruby Tilemap Loader in your project:
 ```ruby
 # Sample code demonstrating how to load a tilemap
 path = "#{File.dirname(__FILE__)}/data/tilemap.json"
-tilemap = SpriteFusion::Tilemap.load(path)
+tilemap_data = JSON.load_file(path)
+tilemap = SpriteFusion::Tilemap.load(tilemap_data)
 ```
 
 ## API Reference

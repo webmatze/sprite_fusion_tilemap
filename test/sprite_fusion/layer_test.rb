@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
+require 'json'
 require_relative '../../lib/sprite_fusion'
 
 class LayerTest < Minitest::Test

@@ -1,15 +1,17 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
+require 'json'
 require_relative '../../lib/sprite_fusion'
 
 class TilemapTest < Minitest::Test
   def setup
     @path = "#{File.dirname(__FILE__)}/../data/tilemap.json"
+    @tilemap_json = JSON.load_file(@path)
   end
 
   def test_load
-    tilemap = SpriteFusion::Tilemap.load(@path)
+    tilemap = SpriteFusion::Tilemap.load(@tilemap_json)
     assert_kind_of SpriteFusion::Tilemap, tilemap
     assert_equal 16, tilemap.tile_size
     assert_equal 24, tilemap.map_width
